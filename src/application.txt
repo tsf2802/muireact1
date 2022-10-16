@@ -1,0 +1,33 @@
+import { Button, styled, Typography } from "@mui/material";
+import SettingsIcon from "@mui/icons-material/Settings"
+function App() {
+
+  const BlueButton = styled(Button)(({theme})=>({
+    backgroundColor: theme.palette.otherColor.main,
+    color: "#888",
+    margin: 5,
+    "&:hover": {
+      backgroundColor: "lightblue"
+    },
+    "&:disabled": {
+      backgroundColor: "gray",
+      color: "white"
+    }
+  }));
+
+  return (
+    <div >
+      <Button variant="text" style={{ borderRadius: 35 }}>Text</Button>
+      <Button startIcon={<SettingsIcon />} variant="contained" size="small" color = "otherColor">Contained</Button>
+      <Button variant="outlined">Outlined</Button>
+      <Typography variant="h1">
+        it uses h1 but its a p tag
+      </Typography>
+      <BlueButton>
+        bruh
+      </BlueButton>
+    </div>
+  );
+}
+
+export default App;
