@@ -24,7 +24,6 @@ const UserBox = styled(Box)(({ theme }) => ({
     }
 }));
 
-
 const Icons = styled(Box)(({ theme }) => ({
     display: "none",
     gap: "20px",
@@ -35,7 +34,6 @@ const Icons = styled(Box)(({ theme }) => ({
     }
 
 }));
-
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
@@ -48,7 +46,7 @@ const Navbar = () => {
                 <AccessibleIcon sx={{ display: { xs: "black", sm: "none" } }} />
                 <Search> <InputBase placeholder="Search for..." /> </Search>
                 <Icons>
-                    <Badge badgeContent={'balls'} color="error">
+                    <Badge badgeContent={'2'} color="error">
                         <NotificationsIcon />
                     </Badge>
                     <Badge badgeContent={'0'} color="error">

@@ -6,7 +6,7 @@ import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from 
 const Sidebar = () =>{
     return (
         <Box flex = {1} sx = {{display:{xs: "none", sm:"block"}}}> 
-            
+         <Box position = "fixed">  
         <List>
         <ListItem disablePadding>
           <ListItemButton component = "a" href = "#home">
@@ -36,7 +36,7 @@ const Sidebar = () =>{
         </ListItem>
         </List>
         
-
+        </Box> 
         </Box>
     )
 }
